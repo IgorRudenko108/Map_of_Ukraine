@@ -1,10 +1,4 @@
-function addLoadedClass() {
-	window.addEventListener("load", function () {
-		setTimeout(function () {
-			document.documentElement.classList.add('loaded');
-		}, 0);
-	});
-}
+
 
 // -- tooltip ----------------------------------------------------
   let regionLink = document.querySelectorAll('.map-top__region');
@@ -29,6 +23,7 @@ function addLoadedClass() {
     });
   });
 // -- tooltip ----------------------------------------------------
+
 
 
 //-- додавання класів для кнопки знімку екрана ------------------------------------------------------------------------------------------------
@@ -59,10 +54,28 @@ mapTopItem.forEach((item) => {
 
 
 
-addLoadedClass();
 
 
+const elm = document.querySelector(".convert");
+
+html2canvas(elm).then(canvas => {
+document.querySelector(".result").appendChild(canvas)
+
+let cvs = document.querySelector("canvas");
+let a = document.querySelector('.css-13mo65m');
+// a.href = cvs.toDataURL("image/jpeg");
+// a.download = "html2canvas.jpeg";
+a.href = cvs.toDataURL();
+a.download = "html2canvas.png";
+});
 
 
+var svgElements = document.body.querySelectorAll('svg');
+svgElements.forEach(function(item) {
+  item.setAttribute("width", item.getBoundingClientRect().width);
+  item.setAttribute("height", item.getBoundingClientRect().height);
+  item.style.width = null;
+  item.style.height= null;
+});
 
 

@@ -39,10 +39,6 @@ a:hover {
 }
 /* ------------------------- */
 html {
-  opacity: 0;
-}
-
-.loaded {
   opacity: 1;
 }
 
@@ -55,6 +51,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 
 .map {
   display: flex;
