@@ -249,13 +249,6 @@ body {
 
 }
 
-/* .convert {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-} */
-
 /* -- управління для знімка екрану -------------------------------------- */
 .css-101ncaf {
   width: 800px;
@@ -452,20 +445,12 @@ body {
 
 .map-top__region.region__active:hover, 
 .map-top__region.region__active:hover path {
-  fill: #9d2323;
+  fill: #621212;
 }
 
 .region__active {
-  /* opacity: 0;
-  width: 0;
-  height: 0; */
-
-  fill: #9d2323;
+    fill: #621212;
 }
-
-/* .map-svg__1 path {
-  fill: #700b10;
-} */
 
 .map-detailed__small-title path{
   fill: #fff;
@@ -729,10 +714,3 @@ body {
   }
 }
 /* /preloader */
-
-.map-svg {
-  /* background-image: url(../img/bottom-layer.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; */
-}
